@@ -39,7 +39,7 @@ RUN apk add --no-cache \
   gettext
 
 # Downloading and installing Garradin
-RUN curl -L -O https://fossil.kd2.org/garradin/uv/garradin-$GARRADIN_VERSION.tar.gz # download
+RUN curl -L -O https://fossil.kd2.org/garradin/uv/paheko-$GARRADIN_VERSION.tar.gz # download
 RUN tar xzvf garradin-$GARRADIN_VERSION.tar.gz # extract
 RUN mv garradin-$GARRADIN_VERSION /var/www/garradin # root of the website
 RUN rm -r garradin-$GARRADIN_VERSION.tar.gz # cleaning
