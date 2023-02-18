@@ -90,6 +90,9 @@ USER nobody
 # Expose the port nginx is reachable on (documentation purposes only)
 EXPOSE 80
 
+# Volume expose
+VOLUME /var/www
+
 ## Let supervisord start nginx & php-fpm
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
 #CMD ["/usr/bin/supervisord"] # should work too
