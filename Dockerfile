@@ -61,6 +61,7 @@ curl -L -O https://fossil.kd2.org/garradin-plugins/uv/caisse.tar.gz ;
 #RUN mv *.tar.gz /var/www/garradin/data/plugins/
 
 # Create symlink so programs depending on `php` still function
+RUN ls -l /usr/bin/php81
 RUN ln -s /usr/bin/php81 /usr/bin/php
 
 # Configure nginx
