@@ -8,7 +8,7 @@ Pre-requisite : *Docker Desktop*.
 
 **Option 1** from [*Docker Hub*](https://hub.docker.com/r/samuelallain/garradin) : download the image and launch the container in one line
 ```
-sudo docker run -d -t --name ga -p 80:80 -v vol-ga:/var/www/garradin/data/ samuelallain/garradin 
+sudo docker run -d -t --name ga -p 80:80 -v vol-ga:/var/www/garradin/data/ hluthwigg/garradin 
 ```
 
 
@@ -16,7 +16,7 @@ sudo docker run -d -t --name ga -p 80:80 -v vol-ga:/var/www/garradin/data/ samue
 
 ```
 # clone the repository
-git clone https://github.com/SamuelAllain/docker-garradin.git
+git clone https://github.com/HluthWigg/docker-garradin.git
 cd docker-garradin
 
 # build the image
