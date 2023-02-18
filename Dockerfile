@@ -1,13 +1,13 @@
-ARG ALPINE_VERSION=3.16
+ARG ALPINE_VERSION=3.17
 FROM alpine:${ALPINE_VERSION}
-LABEL Maintainer="Samuel Allain"
+LABEL Maintainer="HluthWigg"
 LABEL Description="Garradin on Alpine Linux with Docker"
 
 # Setup document root
 WORKDIR /var/www/
 
 # Change the version here
-ENV GARRADIN_VERSION 1.1.26
+ENV GARRADIN_VERSION 1.2.6
 
 # Install packages and remove default server definition
 RUN apk add --no-cache \
